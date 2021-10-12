@@ -63,50 +63,13 @@ CMAKE_SOURCE_DIR = /home/zt/linux_stud/TaoServer/Server
 CMAKE_BINARY_DIR = /home/zt/linux_stud/TaoServer/Server/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.bin.dir
-
-# All Build rule for target.
-CMakeFiles/test.bin.dir/all: CMakeFiles/src.dir/all
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/depend
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles --progress-num=4,5 "Built target test.bin"
-.PHONY : CMakeFiles/test.bin.dir/all
-
-# Include target in all.
-all: CMakeFiles/test.bin.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test.bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.bin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 0
-.PHONY : CMakeFiles/test.bin.dir/rule
-
-# Convenience name for target.
-test.bin: CMakeFiles/test.bin.dir/rule
-
-.PHONY : test.bin
-
-# clean rule for target.
-CMakeFiles/test.bin.dir/clean:
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/clean
-.PHONY : CMakeFiles/test.bin.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/test.bin.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/src.dir
 
 # All Build rule for target.
 CMakeFiles/src.dir/all:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/depend
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles --progress-num=1,2,3 "Built target src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles --progress-num=1,2,3,4 "Built target src"
 .PHONY : CMakeFiles/src.dir/all
 
 # Include target in all.
@@ -116,7 +79,7 @@ all: CMakeFiles/src.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 0
 .PHONY : CMakeFiles/src.dir/rule
@@ -133,6 +96,80 @@ CMakeFiles/src.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/src.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testLog.bin.dir
+
+# All Build rule for target.
+CMakeFiles/testLog.bin.dir/all: CMakeFiles/src.dir/all
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/depend
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles --progress-num=7,8 "Built target testLog.bin"
+.PHONY : CMakeFiles/testLog.bin.dir/all
+
+# Include target in all.
+all: CMakeFiles/testLog.bin.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testLog.bin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testLog.bin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 0
+.PHONY : CMakeFiles/testLog.bin.dir/rule
+
+# Convenience name for target.
+testLog.bin: CMakeFiles/testLog.bin.dir/rule
+
+.PHONY : testLog.bin
+
+# clean rule for target.
+CMakeFiles/testLog.bin.dir/clean:
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/clean
+.PHONY : CMakeFiles/testLog.bin.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/testLog.bin.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testConfig.bin.dir
+
+# All Build rule for target.
+CMakeFiles/testConfig.bin.dir/all: CMakeFiles/src.dir/all
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/depend
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles --progress-num=5,6 "Built target testConfig.bin"
+.PHONY : CMakeFiles/testConfig.bin.dir/all
+
+# Include target in all.
+all: CMakeFiles/testConfig.bin.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testConfig.bin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testConfig.bin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles 0
+.PHONY : CMakeFiles/testConfig.bin.dir/rule
+
+# Convenience name for target.
+testConfig.bin: CMakeFiles/testConfig.bin.dir/rule
+
+.PHONY : testConfig.bin
+
+# clean rule for target.
+CMakeFiles/testConfig.bin.dir/clean:
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/clean
+.PHONY : CMakeFiles/testConfig.bin.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/testConfig.bin.dir/clean
 
 .PHONY : clean
 

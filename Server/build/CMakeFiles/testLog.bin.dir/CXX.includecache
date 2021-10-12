@@ -25,6 +25,8 @@ map
 -
 singleton.h
 ../src/public/singleton.h
+util.h
+../src/public/util.h
 
 ../src/public/singleton.h
 memory
@@ -42,7 +44,7 @@ sys/syscall.h
 pthread.h
 -
 
-/home/zt/linux_stud/TaoServer/Server/tests/test.cpp
+/home/zt/linux_stud/TaoServer/Server/tests/testLog.cpp
 log.h
 /home/zt/linux_stud/TaoServer/Server/tests/log.h
 util.h

@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function   CMakeFiles/test.bin.dir/tests/test.cpp.o  -o ../bin/test.bin -rdynamic ../lib/libsrc.so -Wl,-rpath,/home/zt/linux_stud/TaoServer/Server/lib 

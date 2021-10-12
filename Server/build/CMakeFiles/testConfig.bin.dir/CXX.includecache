@@ -56,19 +56,9 @@ sys/syscall.h
 pthread.h
 -
 
-/home/zt/linux_stud/TaoServer/Server/src/private/config.cpp
+/home/zt/linux_stud/TaoServer/Server/tests/testConfig.cpp
 config.h
-/home/zt/linux_stud/TaoServer/Server/src/private/config.h
-
-/home/zt/linux_stud/TaoServer/Server/src/private/log.cpp
+/home/zt/linux_stud/TaoServer/Server/tests/config.h
 log.h
-/home/zt/linux_stud/TaoServer/Server/src/private/log.h
-iostream
--
-time.h
--
-
-/home/zt/linux_stud/TaoServer/Server/src/private/util.cpp
-util.h
-/home/zt/linux_stud/TaoServer/Server/src/private/util.h
+/home/zt/linux_stud/TaoServer/Server/tests/log.h
 

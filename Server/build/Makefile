@@ -114,19 +114,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test.bin
-
-# Build rule for target.
-test.bin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test.bin
-.PHONY : test.bin
-
-# fast build rule for target.
-test.bin/fast:
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/build
-.PHONY : test.bin/fast
-
-#=============================================================================
 # Target rules for targets named src
 
 # Build rule for target.
@@ -138,6 +125,59 @@ src: cmake_check_build_system
 src/fast:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
 .PHONY : src/fast
+
+#=============================================================================
+# Target rules for targets named testLog.bin
+
+# Build rule for target.
+testLog.bin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testLog.bin
+.PHONY : testLog.bin
+
+# fast build rule for target.
+testLog.bin/fast:
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/build
+.PHONY : testLog.bin/fast
+
+#=============================================================================
+# Target rules for targets named testConfig.bin
+
+# Build rule for target.
+testConfig.bin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testConfig.bin
+.PHONY : testConfig.bin
+
+# fast build rule for target.
+testConfig.bin/fast:
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/build
+.PHONY : testConfig.bin/fast
+
+src/private/config.o: src/private/config.cpp.o
+
+.PHONY : src/private/config.o
+
+# target to build an object file
+src/private/config.cpp.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.o
+.PHONY : src/private/config.cpp.o
+
+src/private/config.i: src/private/config.cpp.i
+
+.PHONY : src/private/config.i
+
+# target to preprocess a source file
+src/private/config.cpp.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.i
+.PHONY : src/private/config.cpp.i
+
+src/private/config.s: src/private/config.cpp.s
+
+.PHONY : src/private/config.s
+
+# target to generate assembly for a file
+src/private/config.cpp.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.s
+.PHONY : src/private/config.cpp.s
 
 src/private/log.o: src/private/log.cpp.o
 
@@ -193,32 +233,59 @@ src/private/util.cpp.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/util.cpp.s
 .PHONY : src/private/util.cpp.s
 
-tests/test.o: tests/test.cpp.o
+tests/testConfig.o: tests/testConfig.cpp.o
 
-.PHONY : tests/test.o
+.PHONY : tests/testConfig.o
 
 # target to build an object file
-tests/test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
+tests/testConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/tests/testConfig.cpp.o
+.PHONY : tests/testConfig.cpp.o
 
-tests/test.i: tests/test.cpp.i
+tests/testConfig.i: tests/testConfig.cpp.i
 
-.PHONY : tests/test.i
+.PHONY : tests/testConfig.i
 
 # target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
+tests/testConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/tests/testConfig.cpp.i
+.PHONY : tests/testConfig.cpp.i
 
-tests/test.s: tests/test.cpp.s
+tests/testConfig.s: tests/testConfig.cpp.s
 
-.PHONY : tests/test.s
+.PHONY : tests/testConfig.s
 
 # target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.bin.dir/build.make CMakeFiles/test.bin.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
+tests/testConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/testConfig.bin.dir/build.make CMakeFiles/testConfig.bin.dir/tests/testConfig.cpp.s
+.PHONY : tests/testConfig.cpp.s
+
+tests/testLog.o: tests/testLog.cpp.o
+
+.PHONY : tests/testLog.o
+
+# target to build an object file
+tests/testLog.cpp.o:
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/tests/testLog.cpp.o
+.PHONY : tests/testLog.cpp.o
+
+tests/testLog.i: tests/testLog.cpp.i
+
+.PHONY : tests/testLog.i
+
+# target to preprocess a source file
+tests/testLog.cpp.i:
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/tests/testLog.cpp.i
+.PHONY : tests/testLog.cpp.i
+
+tests/testLog.s: tests/testLog.cpp.s
+
+.PHONY : tests/testLog.s
+
+# target to generate assembly for a file
+tests/testLog.cpp.s:
+	$(MAKE) -f CMakeFiles/testLog.bin.dir/build.make CMakeFiles/testLog.bin.dir/tests/testLog.cpp.s
+.PHONY : tests/testLog.cpp.s
 
 # Help Target
 help:
@@ -227,18 +294,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... test.bin"
 	@echo "... src"
+	@echo "... testLog.bin"
+	@echo "... testConfig.bin"
+	@echo "... rebuild_cache"
+	@echo "... src/private/config.o"
+	@echo "... src/private/config.i"
+	@echo "... src/private/config.s"
 	@echo "... src/private/log.o"
 	@echo "... src/private/log.i"
 	@echo "... src/private/log.s"
 	@echo "... src/private/util.o"
 	@echo "... src/private/util.i"
 	@echo "... src/private/util.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
+	@echo "... tests/testConfig.o"
+	@echo "... tests/testConfig.i"
+	@echo "... tests/testConfig.s"
+	@echo "... tests/testLog.o"
+	@echo "... tests/testLog.i"
+	@echo "... tests/testLog.s"
 .PHONY : help
 
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/src/private/log.cpp.o"
   "CMakeFiles/src.dir/src/private/util.cpp.o"
+  "CMakeFiles/src.dir/src/private/config.cpp.o"
   "../lib/libsrc.pdb"
   "../lib/libsrc.so"
 )

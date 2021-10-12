@@ -1,4 +1,5 @@
 /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/edit_cache.dir
-/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/rebuild_cache.dir
-/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/test.bin.dir
 /home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/src.dir
+/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/testLog.bin.dir
+/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/testConfig.bin.dir
+/home/zt/linux_stud/TaoServer/Server/build/CMakeFiles/rebuild_cache.dir

@@ -11,6 +11,7 @@
 #include <map>
 
 #include "singleton.h"
+#include "util.h"
 
 #define TAO_LOG_LEVEL(logger, level) \
     if (logger->getLevel() <= level) \
@@ -37,6 +38,8 @@
 #define TAO_LOG_FMT_WARN(logger, fmt, ...) TAO_LOG_FMT_LEVEL(logger, Tao::LogLevel::WARN, fmt, __VA_ARGS__)
 #define TAO_LOG_FMT_ERROR(logger, fmt, ...) TAO_LOG_FMT_LEVEL(logger, Tao::LogLevel::ERROR, fmt, __VA_ARGS__)
 #define TAO_LOG_FMT_FATAL(logger, fmt, ...) TAO_LOG_FMT_LEVEL(logger, Tao::LogLevel::FATAL, fmt, __VA_ARGS__)
+
+#define TAO_LOG_ROOT() Tao::LoggerMgr::getInstance()->getRoot()
 
 namespace Tao{
 class Logger;
@@ -210,6 +213,8 @@ class LoggerManage{
 public:
     LoggerManage();
     Logger::ptr getLogger(const std::string& name);
+
+    Logger::ptr getRoot() const { return m_loggerRoot; }
 
 private:
     void init();
