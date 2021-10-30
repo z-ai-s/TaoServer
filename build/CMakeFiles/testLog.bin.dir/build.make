@@ -93,7 +93,7 @@ testLog_bin_EXTERNAL_OBJECTS =
 
 ../bin/testLog.bin: CMakeFiles/testLog.bin.dir/tests/testLog.cpp.o
 ../bin/testLog.bin: CMakeFiles/testLog.bin.dir/build.make
-../bin/testLog.bin: ../lib/libsrc.so
+../bin/testLog.bin: ../lib/libtao.a
 ../bin/testLog.bin: CMakeFiles/testLog.bin.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zt/linux_stud/TaoServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/testLog.bin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testLog.bin.dir/link.txt --verbose=$(VERBOSE)

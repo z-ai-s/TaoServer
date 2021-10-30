@@ -114,17 +114,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named src
+# Target rules for targets named tao
 
 # Build rule for target.
-src: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 src
-.PHONY : src
+tao: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tao
+.PHONY : tao
 
 # fast build rule for target.
-src/fast:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
-.PHONY : src/fast
+tao/fast:
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/build
+.PHONY : tao/fast
 
 #=============================================================================
 # Target rules for targets named testLog.bin
@@ -158,7 +158,7 @@ src/private/config.o: src/private/config.cpp.o
 
 # target to build an object file
 src/private/config.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.o
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/config.cpp.o
 .PHONY : src/private/config.cpp.o
 
 src/private/config.i: src/private/config.cpp.i
@@ -167,7 +167,7 @@ src/private/config.i: src/private/config.cpp.i
 
 # target to preprocess a source file
 src/private/config.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.i
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/config.cpp.i
 .PHONY : src/private/config.cpp.i
 
 src/private/config.s: src/private/config.cpp.s
@@ -176,7 +176,7 @@ src/private/config.s: src/private/config.cpp.s
 
 # target to generate assembly for a file
 src/private/config.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/config.cpp.s
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/config.cpp.s
 .PHONY : src/private/config.cpp.s
 
 src/private/log.o: src/private/log.cpp.o
@@ -185,7 +185,7 @@ src/private/log.o: src/private/log.cpp.o
 
 # target to build an object file
 src/private/log.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/log.cpp.o
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/log.cpp.o
 .PHONY : src/private/log.cpp.o
 
 src/private/log.i: src/private/log.cpp.i
@@ -194,7 +194,7 @@ src/private/log.i: src/private/log.cpp.i
 
 # target to preprocess a source file
 src/private/log.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/log.cpp.i
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/log.cpp.i
 .PHONY : src/private/log.cpp.i
 
 src/private/log.s: src/private/log.cpp.s
@@ -203,7 +203,7 @@ src/private/log.s: src/private/log.cpp.s
 
 # target to generate assembly for a file
 src/private/log.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/log.cpp.s
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/log.cpp.s
 .PHONY : src/private/log.cpp.s
 
 src/private/util.o: src/private/util.cpp.o
@@ -212,7 +212,7 @@ src/private/util.o: src/private/util.cpp.o
 
 # target to build an object file
 src/private/util.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/util.cpp.o
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/util.cpp.o
 .PHONY : src/private/util.cpp.o
 
 src/private/util.i: src/private/util.cpp.i
@@ -221,7 +221,7 @@ src/private/util.i: src/private/util.cpp.i
 
 # target to preprocess a source file
 src/private/util.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/util.cpp.i
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/util.cpp.i
 .PHONY : src/private/util.cpp.i
 
 src/private/util.s: src/private/util.cpp.s
@@ -230,7 +230,7 @@ src/private/util.s: src/private/util.cpp.s
 
 # target to generate assembly for a file
 src/private/util.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/private/util.cpp.s
+	$(MAKE) -f CMakeFiles/tao.dir/build.make CMakeFiles/tao.dir/src/private/util.cpp.s
 .PHONY : src/private/util.cpp.s
 
 tests/testConfig.o: tests/testConfig.cpp.o
@@ -294,7 +294,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... src"
+	@echo "... tao"
 	@echo "... testLog.bin"
 	@echo "... testConfig.bin"
 	@echo "... rebuild_cache"

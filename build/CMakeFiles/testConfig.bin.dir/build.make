@@ -93,7 +93,7 @@ testConfig_bin_EXTERNAL_OBJECTS =
 
 ../bin/testConfig.bin: CMakeFiles/testConfig.bin.dir/tests/testConfig.cpp.o
 ../bin/testConfig.bin: CMakeFiles/testConfig.bin.dir/build.make
-../bin/testConfig.bin: ../lib/libsrc.so
+../bin/testConfig.bin: ../lib/libtao.a
 ../bin/testConfig.bin: CMakeFiles/testConfig.bin.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zt/linux_stud/TaoServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/testConfig.bin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testConfig.bin.dir/link.txt --verbose=$(VERBOSE)

@@ -172,7 +172,7 @@ Tao_BINARY_DIR:STATIC=/home/zt/linux_stud/TaoServer/build
 Tao_SOURCE_DIR:STATIC=/home/zt/linux_stud/TaoServer
 
 //Dependencies for target
-src_LIB_DEPENDS:STATIC=
+tao_LIB_DEPENDS:STATIC=
 
 
 ########################

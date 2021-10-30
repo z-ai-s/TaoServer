@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libtao.a  CMakeFiles/tao.dir/src/private/log.cpp.o CMakeFiles/tao.dir/src/private/util.cpp.o CMakeFiles/tao.dir/src/private/config.cpp.o
+/usr/bin/ranlib ../lib/libtao.a
