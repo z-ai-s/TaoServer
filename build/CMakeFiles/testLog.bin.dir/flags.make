@@ -6,5 +6,5 @@ CXX_FLAGS =  -rdynamic -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-f
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zt/linux_stud/TaoServer/src/public 
+CXX_INCLUDES = -I/home/zt/linux_stud/TaoServer/src/public -I/usr/local/include 
 
